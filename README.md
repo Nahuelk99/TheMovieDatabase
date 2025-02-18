@@ -1,73 +1,75 @@
-# Proyecto: CLI de Películas con TMDB
+Proyecto: CLI de Películas con TMDB
 
-Este es un proyecto de interfaz de línea de comandos (CLI) que utiliza la API de The Movie Database (TMDB) para obtener y mostrar información sobre películas directamente en la terminal.
+Este proyecto es una interfaz de línea de comandos (CLI) que permite obtener y visualizar información de películas desde The Movie Database (TMDB). Es una excelente manera de practicar el consumo de APIs, manejo de datos JSON y creación de herramientas CLI.
 
-## Características
+Características
 
-- Obtener y visualizar listas de películas populares, mejor calificadas, próximas y en reproducción actualmente.
-- Permite al usuario especificar el tipo de películas que desea ver mediante argumentos de línea de comandos.
-- Manejo de errores para garantizar una experiencia fluida.
+Obtener y mostrar películas populares, mejor calificadas, en estreno y próximamente disponibles.
 
-## Requisitos
+Interactuar con la API de TMDB desde la terminal.
 
-- Tener instalado Node.js o Python (según el lenguaje utilizado).
-- Obtener una clave de API de TMDB para realizar las solicitudes.
+Manejo de errores ante fallos de API o problemas de red.
 
-## Instalación
+Requisitos
 
-1. Clona este repositorio:
-   ```sh
-   git clone https://github.com/Nahuelk99/TheMovieDatabase.git
-   cd TheMovieDatabase
-   ```
-2. Instala las dependencias necesarias (si aplica):
-   ```sh
-   npm install   # Para Node.js
-   ```
-   o
-   ```sh
-   pip install -r requirements.txt   # Para Python
-   ```
-3. Configura tu clave de API de TMDB:
-   - Crea un archivo `.env` y agrega tu clave de API:
-     ```sh
-     TMDB_API_KEY=tu_api_key
-     ```
+Tener Node.js instalado en tu sistema.
 
-## Uso
+Una cuenta en TMDB para obtener la API Key.
 
-Ejecuta el siguiente comando en la terminal para ver las películas según el tipo especificado:
+Cómo obtener una API Key de TMDB
 
-```sh
-node index.js --type "popular"
-```
+Regístrate en TMDB.
 
-o si está en Python:
+Inicia sesión y dirígete a la sección "Settings" (Configuración).
 
-```sh
-python app.py --type "top"
-```
+En el menú lateral, busca "API" y haz clic en "Create" para generar una clave.
 
-Opciones disponibles:
-- `--type "playing"` → Películas en reproducción
-- `--type "popular"` → Películas populares
-- `--type "top"` → Películas mejor calificadas
-- `--type "upcoming"` → Próximos estrenos
+Guarda la clave, ya que será necesaria para acceder a la API.
 
-## Consideraciones
+Instalación y Configuración
 
-- Manejo de errores en caso de problemas de conexión o fallos de la API.
-- Puede extenderse para incluir más funcionalidades según las necesidades del usuario.
+Clona este repositorio:
 
-## Contribución
+git clone https://github.com/Nahuelk99/TheMovieDatabase.git
+cd TheMovieDatabase
 
-Si deseas contribuir, puedes hacer un fork del repositorio y enviar un pull request con mejoras o nuevas funcionalidades.
+Instala las dependencias necesarias:
 
-## Licencia
+npm install
 
-Este proyecto está bajo la licencia MIT. Puedes utilizarlo y modificarlo libremente.
+Crea un archivo .env en la raíz del proyecto y añade tu API Key:
 
----
+API_KEY=tu_api_key_aqui
 
-🎥 Disfruta explorando películas desde tu terminal con este CLI! 🎬
+Uso
 
+Ejecuta la aplicación desde la línea de comandos con el siguiente formato:
+
+tmdb-app --type "playing"
+tmdb-app --type "popular"
+tmdb-app --type "top"
+tmdb-app --type "upcoming"
+
+Donde:
+
+playing: Muestra las películas en reproducción.
+
+popular: Muestra las películas más populares.
+
+top: Muestra las películas mejor calificadas.
+
+upcoming: Muestra las próximas películas.
+
+Consideraciones
+
+Asegúrate de manejar errores correctamente (fallos en la API, problemas de conexión, etc.).
+
+Puedes usar cualquier lenguaje de programación para desarrollar este proyecto.
+
+Contribución
+
+Si deseas mejorar este proyecto, ¡las contribuciones son bienvenidas! Puedes hacer un fork, trabajar en mejoras y enviar un pull request.
+
+Licencia
+
+Este proyecto está bajo la licencia MIT.
