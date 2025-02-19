@@ -35,10 +35,10 @@ Este proyecto es una interfaz de línea de comandos (CLI) que permite obtener y 
 ## Uso
 Ejecuta la aplicación desde la línea de comandos con el siguiente formato:
 ```sh
-tmdb-app --type "playing"
-tmdb-app --type "popular"
-tmdb-app --type "top"
-tmdb-app --type "upcoming"
+python tmdb.py --type playing
+python tmdb.py --type popular
+python tmdb.py --type top
+python tmdb.py --type upcoming
 ```
 
 Donde:
